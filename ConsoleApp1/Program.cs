@@ -10,6 +10,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            while (true)
+            {
+                Console.Write("Какой класс Вы хотите создать: ");
+                switch (Console.ReadLine())
+                {
+                    case "ClassA": UI.Print(ClassCreator.ClassA()); break;
+                    case "ClassB": UI.Print(ClassCreator.ClassB()); break;
+                    default: Console.WriteLine("Такой класс не реализован"); break;
+                }
+            }
         }
     }
 }
