@@ -21,6 +21,11 @@ namespace ConsoleApp1
             Print(classB.ClassC);
         }
 
+        public static void Print(Class3 class3)
+        {
+            Console.WriteLine($"Название дисциплины: {class3.Name}");
+            Console.WriteLine($"Сокращение дисциплины: {class3.Name}");
+        }
         public static void Print(ClassC classC)
         {
 
