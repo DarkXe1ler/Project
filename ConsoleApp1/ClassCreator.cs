@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +27,14 @@ namespace ConsoleApp1
         {
             return new ClassC();
         }
+
+        public static Class3 Class3()
+        {
+            Console.Write("Введите дисциплину: ");
+            string name = Console.ReadLine();
+            Console.Write("Введите сокращение дисциплины: ");
+            string shortName = Console.ReadLine();
+            return new Class3(name, shortName);
 
         public static Class4 Class4()
         {
