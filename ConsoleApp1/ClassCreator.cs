@@ -27,6 +27,24 @@ namespace ConsoleApp1
         {
             return new ClassC();
         }
+
+        public static Class9 Class9()
+        {
+            return new Class9();
+        }
+
+        public static Class11 Class11()
+        {
+            Console.Write("Введите название: ");
+            string name = Console.ReadLine();  
+
+            return new Class11(name, Class9(), Class12());
+        }
+
+        public static Class12 Class12() 
+        {
+            return new Class12();
+        }
     }
 
     

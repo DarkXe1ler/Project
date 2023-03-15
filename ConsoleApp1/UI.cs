@@ -25,5 +25,22 @@ namespace ConsoleApp1
         {
 
         }
+
+        public static void Print(Class9 class9)
+        {
+
+        }
+
+        public static void Print(Class11 class11)
+        {
+            Console.WriteLine($"Class11.Name = {class11.Name}");
+            Print(class11.class9);
+            Print(class11.class12);
+        }
+
+        public static void Print(Class12 class12)
+        {
+
+        }
     }
 }
