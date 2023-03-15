@@ -25,5 +25,12 @@ namespace ConsoleApp1
         {
 
         }
+        public static void Print(Class5 class5)
+        {
+            Console.WriteLine($"Class5.Фамилия = {class5.Фамилия}");
+            Console.WriteLine($"Class5.Имя= {class5.Имя}");
+            Console.WriteLine($"Class5. Отчество = {class5.Отчество}");
+            Console.WriteLine($"Class5.Дата_Рождения = {class5.Дата_Рождения}");
+        }
     }
 }
