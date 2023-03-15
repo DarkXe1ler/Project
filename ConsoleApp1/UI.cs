@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,6 +21,11 @@ namespace ConsoleApp1
             Print(classB.ClassC);
         }
 
+        public static void Print(Class3 class3)
+        {
+            Console.WriteLine($"Название дисциплины: {class3.Name}");
+            Console.WriteLine($"Сокращение дисциплины: {class3.ShortName}");
+        }
         public static void Print(ClassC classC)
         {
 
@@ -40,7 +45,20 @@ namespace ConsoleApp1
 
         public static void Print(Class12 class12)
         {
+            
+        }
 
+        public static void Print(Class5 class5)
+        {
+            Console.WriteLine($"Class5.Фамилия = {class5.Фамилия}");
+            Console.WriteLine($"Class5.Имя= {class5.Имя}");
+            Console.WriteLine($"Class5. Отчество = {class5.Отчество}");
+            Console.WriteLine($"Class5.Дата_Рождения = {class5.Дата_Рождения}");
+            Print(class5.Группа);
+        }
+        public static void Print(Class4 class4)
+        {
+            
         }
     }
 }
