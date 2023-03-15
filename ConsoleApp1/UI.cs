@@ -35,7 +35,7 @@ namespace ConsoleApp1
         }
         public static void Print(Class4 class4)
         {
-            Console.WriteLine($"Class4.Группа = {class4.Группа}");
+            Console.WriteLine($"Class4.Группа =");
         }
     }
 }
