@@ -31,6 +31,11 @@ namespace ConsoleApp1
             Console.WriteLine($"Class5.Имя= {class5.Имя}");
             Console.WriteLine($"Class5. Отчество = {class5.Отчество}");
             Console.WriteLine($"Class5.Дата_Рождения = {class5.Дата_Рождения}");
+            Print(class5.Группа);
+        }
+        public static void Print(Class4 class4)
+        {
+            Console.WriteLine($"Class4.Группа = {class4.Группа}");
         }
     }
 }

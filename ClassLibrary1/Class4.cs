@@ -8,5 +8,6 @@ namespace ClassLibrary1
 {
     public class Class4
     {
+        public string Группа { get; }
     }
 }

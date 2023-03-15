@@ -43,7 +43,7 @@ namespace ConsoleApp1
             string отчество = Console.ReadLine();
             Console.Write("Введите дату рождения: ");
             string дата_рождения = Console.ReadLine();
-            Class4 группа=Class4();
+            Class4 группа=new Class4();
             return new Class5(имя, фамилия, отчество, дата_рождения, группа);
         }
     }
