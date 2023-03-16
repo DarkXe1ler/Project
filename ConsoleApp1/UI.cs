@@ -20,13 +20,51 @@ namespace ConsoleApp1
             Print(classB.ClassA);
             Print(classB.ClassC);
         }
+        public static void Print(ClassC classC)
+        {
+
+        }
+
+        public static void Print(Class1 class1)
+        {
+            Console.WriteLine($"Class1.Дата проведения = {class1.Date}");
+            Print(class1.Class3);
+            Print(class1.Class9);
+            Print(class1.Class2);
+            Print(class1.Class4);
+            Print(class1.Class7);
+            Print(class1.Class14);
+        }
+        public static void Print(Class2 class2)
+        {
+            Console.WriteLine($"Class2.Название = {class2.Name}");
+            Print(class2.Class9);
+            Console.WriteLine($"Class2.Количество мест = {class2.NumberMest}");
+            Console.WriteLine($"Class2.Количество окон = {class2.NumberOkon}");
+            Print(class2.Class15);
+        }
 
         public static void Print(Class3 class3)
         {
             Console.WriteLine($"Название дисциплины: {class3.Name}");
             Console.WriteLine($"Сокращение дисциплины: {class3.ShortName}");
         }
-        public static void Print(ClassC classC)
+
+        public static void Print(Class4 class4)
+        {
+
+        }
+
+        public static void Print(Class5 class5)
+        {
+            Console.WriteLine($"Class5.Фамилия = {class5.Фамилия}");
+            Console.WriteLine($"Class5.Имя = {class5.Имя}");
+            Console.WriteLine($"Class5. Отчество = {class5.Отчество}");
+            Console.WriteLine($"Class5.Дата_Рождения = {class5.Дата_Рождения}");
+            Print(class5.Группа);
+        }
+
+        public static void Print(Class7 class7)
         {
 
         }
@@ -56,17 +94,14 @@ namespace ConsoleApp1
             
         }
 
-        public static void Print(Class5 class5)
+        public static void Print(Class14 class14)
         {
-            Console.WriteLine($"Class5.Фамилия = {class5.Фамилия}");
-            Console.WriteLine($"Class5.Имя= {class5.Имя}");
-            Console.WriteLine($"Class5. Отчество = {class5.Отчество}");
-            Console.WriteLine($"Class5.Дата_Рождения = {class5.Дата_Рождения}");
-            Print(class5.Группа);
+
         }
-        public static void Print(Class4 class4)
+
+        public static void Print(Class15 class15)
         {
-            
+
         }
     }
 }
