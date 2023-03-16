@@ -17,7 +17,7 @@ namespace ConsoleApp1
                 {
                     case "ClassA": UI.Print(ClassCreator.ClassA()); break;
                     case "ClassB": UI.Print(ClassCreator.ClassB()); break;
-                    case "Para": UI.Print(ClassCreator.Para()); break;
+                    case "Пара": UI.Print(ClassCreator.Para()); break;
                     default: Console.WriteLine("Такой класс не реализован"); break;
                 }
             }

@@ -29,13 +29,13 @@ namespace ConsoleApp1
         }
         public static Para Para()
         {
-            Console.Write("Укажите время начала пары");
+            Console.Write("Укажите время начала пары: ");
             string TheStartTimeOfThePair = Console.ReadLine();
-            Console.Write("Укажите время окончания пары");
+            Console.Write("Укажите время окончания пары: ");
             string TheEndTimeOfThePair = Console.ReadLine();
-            Console.Write("Укажите время начала перерыва");
+            Console.Write("Укажите время начала перерыва: ");
             string BreakStartTime = Console.ReadLine();
-            Console.Write("Укажите время окончания перерыва");
+            Console.Write("Укажите время окончания перерыва: ");
             string BreakEndTime = Console.ReadLine();
             Smena smena = new Smena();
 
