@@ -25,5 +25,12 @@ namespace ConsoleApp1
         {
 
         }
+        public static void Print(Para para)
+        {
+            Console.WriteLine($"Para.Время начала пары = {para.TheStartTimeOfThePair}");
+            Console.WriteLine($"Para.Время окончания пары = {para.TheEndTimeOfThePair}");
+            Console.WriteLine($"Para.Время начала перерыва = {para.BreakStartTime}");
+            Console.WriteLine($"Para.Время окончания перерыва = {para.BreakEndTime}");
+        }
     }
 }
