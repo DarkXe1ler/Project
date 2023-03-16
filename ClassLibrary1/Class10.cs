@@ -13,11 +13,11 @@ namespace ClassLibrary1
      public Class11 class11 { get; }
      
      
-     public Class10(string name, string salary, Class11lass11)
+     public Class10(string name, string salary, Class11 class11)
      {
          this.Name = name;
          this.Salary = salary;
-         this.class11 = clas11;
+         this.class11 = class11;
      }
  }
 }
