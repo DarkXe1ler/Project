@@ -89,6 +89,9 @@ namespace ConsoleApp1
 
         public static void Print(Class10 class10)
         {
+            Console.WriteLine($"Class10.Имя = {class10.Name}")
+            Console.WriteLine($"Class10.Оклад = {class10.Salary}")
+            Print(class10.class11)
 
         }
 
@@ -101,6 +104,7 @@ namespace ConsoleApp1
 
         public static void Print(Class12 class12)
         {
+            
             
         }
 
