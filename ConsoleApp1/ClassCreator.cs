@@ -28,6 +28,20 @@ namespace ConsoleApp1
             return new ClassC();
         }
 
+        public static Para Para()
+        {
+            Console.Write("Укажите время начала пары: ");
+            string TheStartTimeOfThePair = Console.ReadLine();
+            Console.Write("Укажите время окончания пары: ");
+            string TheEndTimeOfThePair = Console.ReadLine();
+            Console.Write("Укажите время начала перерыва: ");
+            string BreakStartTime = Console.ReadLine();
+            Console.Write("Укажите время окончания перерыва: ");
+            string BreakEndTime = Console.ReadLine();
+            Smena smena = new Smena();
+
+            return new Para(TheStartTimeOfThePair, TheEndTimeOfThePair, BreakStartTime, BreakEndTime, smena);
+
         public static Class1 Class1()
         {
             Console.Write("Введите дату проведения: ");
