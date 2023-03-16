@@ -33,12 +33,20 @@ namespace ConsoleApp1
 
         public static void Print(Class9 class9)
         {
+            Console.WriteLine($"Class9.Фамилия: {class9.Surname}");
+            Console.WriteLine($"Class9.Имя: {class9.Name}");
+            Console.WriteLine($"Class9.Отчество: {class9.Patronymic}");
+            Print(class9._class10);
+        }
+
+        public static void Print(Class10 class10)
+        {
 
         }
 
         public static void Print(Class11 class11)
         {
-            Console.WriteLine($"Class11.Name = {class11.Name}");
+            Console.WriteLine($"Class11.Имя = {class11.Name}");
             Print(class11.class9);
             Print(class11.class12);
         }

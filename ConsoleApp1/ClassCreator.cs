@@ -30,7 +30,18 @@ namespace ConsoleApp1
 
         public static Class9 Class9()
         {
-            return new Class9();
+            Console.Write("Введите фамилию: ");
+            string surnname = Console.ReadLine();
+            Console.Write("Введите имя: ");
+            string name = Console.ReadLine();
+            Console.Write("Введите Отчество: ");
+            string patronymic = Console.ReadLine();
+            return new Class9(surnname, name, patronymic, Class10());
+        }
+
+        public static Class10 Class10()
+        {
+            return new Class10();
         }
 
         public static Class11 Class11()
@@ -41,9 +52,11 @@ namespace ConsoleApp1
             return new Class11(name, Class9(), Class12());
         }
 
-        public static Class12 Class12() 
+        public static Class12 Class12()
         {
             return new Class12();
+
+        }
 
         public static Class3 Class3()
         {
@@ -52,6 +65,8 @@ namespace ConsoleApp1
             Console.Write("Введите сокращение дисциплины: ");
             string shortName = Console.ReadLine();
             return new Class3(name, shortName);
+
+        }
 
         public static Class4 Class4()
         {
