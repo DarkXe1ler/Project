@@ -69,7 +69,11 @@ namespace ConsoleApp1
             Console.WriteLine($"Class5.Дата_Рождения = {class5.Дата_Рождения}");
             Print(class5.Группа);
         }
-
+        public static void Print(Class6 class6)
+        {
+            Console.WriteLine($"Class6.Введите название специальности = {class6.Named}");
+            Console.WriteLine($"Class6.Введите сокращение = {class6.Reduction}");
+        }
         public static void Print(Class7 class7)
         {
 
