@@ -41,7 +41,7 @@ namespace ConsoleApp1
             Smena smena = new Smena();
 
             return new Para(TheStartTimeOfThePair, TheEndTimeOfThePair, BreakStartTime, BreakEndTime, smena);
-
+        }
         public static Class1 Class1()
         {
             Console.Write("Введите дату проведения: ");

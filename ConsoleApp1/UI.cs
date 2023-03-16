@@ -30,7 +30,7 @@ namespace ConsoleApp1
             Console.WriteLine($"Para.Время окончания пары = {para.TheEndTimeOfThePair}");
             Console.WriteLine($"Para.Время начала перерыва = {para.BreakStartTime}");
             Console.WriteLine($"Para.Время окончания перерыва = {para.BreakEndTime}");
-
+        }
         public static void Print(Class1 class1)
         {
             Console.WriteLine($"Class1.Дата проведения = {class1.Date}");
