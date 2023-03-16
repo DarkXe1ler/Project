@@ -58,7 +58,12 @@ namespace ConsoleApp1
 
         public static void Print(Class4 class4)
         {
-
+            Console.WriteLine($"Class4.Название = {class4.Name}");
+            Console.WriteLine($"Class4.Сокращение = {class4.Abbreviation}");
+            Console.WriteLine($"Class4.Численность = {class4.Number}");
+            Console.WriteLine($"Class4.ГодПоступления = {class4.YearOfAdmission}");
+            Print(class4.Class6);
+            Print(class4.Class9);
         }
 
         public static void Print(Class5 class5)
@@ -89,9 +94,9 @@ namespace ConsoleApp1
 
         public static void Print(Class10 class10)
         {
-            Console.WriteLine($"Class10.Имя = {class10.Name}")
-            Console.WriteLine($"Class10.Оклад = {class10.Salary}")
-            Print(class10.class11)
+            Console.WriteLine($"Class10.Имя = {class10.Name}");
+            Console.WriteLine($"Class10.Оклад = {class10.Salary}");
+            Print(class10.class11);
 
         }
 
