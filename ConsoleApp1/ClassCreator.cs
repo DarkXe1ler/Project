@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using ClassLibrary1;
 
 namespace ConsoleApp1
@@ -69,10 +70,7 @@ namespace ConsoleApp1
 
         }
 
-        public static Class4 Class4()
-        {
-            return new Class4();
-        }
+
 
         public static Class5 Class5()
         {
@@ -84,8 +82,8 @@ namespace ConsoleApp1
             string отчество = Console.ReadLine();
             Console.Write("Введите дату рождения: ");
             string дата_рождения = Console.ReadLine();
-            Class4 группа = new Class4();
-            return new Class5(имя, фамилия, отчество, дата_рождения, группа);
+            //Class4 группа = new Class4();
+            return new Class5(имя, фамилия, отчество, дата_рождения, Class4());
         }
         public static Class9 Class9()
         {
@@ -140,6 +138,29 @@ namespace ConsoleApp1
         public static Class15 Class15()
         {
             return new Class15();
+        }
+
+        public static Class4 Class4()
+        {
+            int yearOfAdmission;
+            Console.Write("Введите имя: ");
+            string name = Console.ReadLine();
+            Console.Write("Введите сокращение: ");
+            string abbreviation = Console.ReadLine();
+            Console.Write("Введите численность: ");
+            int number = int.Parse(Console.ReadLine());
+            Console.Write("Введите год поступления: ");
+            try
+            {
+                yearOfAdmission = int.Parse(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                yearOfAdmission = DateTime.Now.Year;
+            }
+            return new Class4(name, abbreviation, number, yearOfAdmission, Class6(), Class9());
+
+
         }
     }
 
