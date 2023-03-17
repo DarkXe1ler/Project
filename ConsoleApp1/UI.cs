@@ -41,13 +41,13 @@ namespace ConsoleApp1
             Print(lesson.Para);
             Print(lesson.VidZanyatia);
         }
-        public static void Print(Class2 class2)
+        public static void Print(Auditoria Auditoria)
         {
-            Console.WriteLine($"Class2.Название = {class2.Name}");
-            Print(class2.Class9);
-            Console.WriteLine($"Class2.Количество мест = {class2.NumberMest}");
-            Console.WriteLine($"Class2.Количество окон = {class2.NumberOkon}");
-            Print(class2.Class15);
+            Console.WriteLine($"Auditoria.Название = {Auditoria.Name}");
+            Print(Auditoria.Class9);
+            Console.WriteLine($"Auditoria.Количество мест = {Auditoria.NumberMest}");
+            Console.WriteLine($"Auditoria.Количество окон = {Auditoria.NumberOkon}");
+            Print(Auditoria.Class15);
         }
 
         public static void Print(Class3 class3)

@@ -48,7 +48,7 @@
     <Compile Include="Class12.cs" />
     <Compile Include="Class14.cs" />
     <Compile Include="Class15.cs" />
-    <Compile Include="Class2.cs" />
+    <Compile Include="Auditoria.cs" />
     <Compile Include="Class6.cs" />
     <Compile Include="Class9.cs" />
     <Compile Include="Class3.cs" />
