@@ -12,9 +12,9 @@ namespace ClassLibrary1
         public string Имя { get; }
         public string Отчество { get; }
         public string Дата_Рождения { get; }
-        public Class4 Группа{ get; }
+        public Group Группа{ get; }
 
-        public Class5(string фамилия, string имя, string отчество, string дата_рождения, Class4 группа)
+        public Class5(string фамилия, string имя, string отчество, string дата_рождения, Group группа)
         {
             Фамилия = фамилия;
             Имя = имя;

@@ -37,7 +37,7 @@ namespace ConsoleApp1
             Print(class1.Class3);
             Print(class1.Class9);
             Print(class1.Class2);
-            Print(class1.Class4);
+            Print(class1.Group);
             Print(class1.Class7);
             Print(class1.Class14);
         }
@@ -56,14 +56,14 @@ namespace ConsoleApp1
             Console.WriteLine($"Сокращение дисциплины: {class3.ShortName}");
         }
 
-        public static void Print(Class4 class4)
+        public static void Print(Group group)
         {
-            Console.WriteLine($"Class4.Название = {class4.Name}");
-            Console.WriteLine($"Class4.Сокращение = {class4.Abbreviation}");
-            Console.WriteLine($"Class4.Численность = {class4.Number}");
-            Console.WriteLine($"Class4.ГодПоступления = {class4.YearOfAdmission}");
-            Print(class4.Class6);
-            Print(class4.Class9);
+            Console.WriteLine($"Group.Название = {group.Name}");
+            Console.WriteLine($"Group.Сокращение = {group.Abbreviation}");
+            Console.WriteLine($"Group.Численность = {group.Number}");
+            Console.WriteLine($"Group.ГодПоступления = {group.YearOfAdmission}");
+            Print(group.HomeroomTeacher);
+            Print(group.Speciality);
         }
 
         public static void Print(Class5 class5)
