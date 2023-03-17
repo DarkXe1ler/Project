@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Lesson.cs" />
     <Compile Include="Class10.cs" />
     <Compile Include="Class11.cs" />
     <Compile Include="Class12.cs" />
@@ -50,7 +50,6 @@
     <Compile Include="Class15.cs" />
     <Compile Include="Class2.cs" />
     <Compile Include="Class6.cs" />
-    <Compile Include="Class7.cs" />
     <Compile Include="Class9.cs" />
     <Compile Include="Class3.cs" />
     <Compile Include="Class4.cs" />
