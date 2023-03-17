@@ -31,15 +31,15 @@ namespace ConsoleApp1
             Console.WriteLine($"Para.Время начала перерыва = {para.BreakStartTime}");
             Console.WriteLine($"Para.Время окончания перерыва = {para.BreakEndTime}");
         }
-        public static void Print(Class1 class1)
+        public static void Print(Lesson lesson)
         {
-            Console.WriteLine($"Class1.Дата проведения = {class1.Date}");
-            Print(class1.Class3);
-            Print(class1.Class9);
-            Print(class1.Class2);
-            Print(class1.Group);
-            Print(class1.Class7);
-            Print(class1.Class14);
+            Console.WriteLine($"Дата проведения занятия = {lesson.Date}");
+            Print(lesson.Disciplina);
+            Print(lesson.Sotrudnik);
+            Print(lesson.Auditoria);
+            Print(lesson.Group);
+            Print(lesson.Para);
+            Print(lesson.VidZanyatia);
         }
         public static void Print(Class2 class2)
         {
@@ -79,10 +79,6 @@ namespace ConsoleApp1
             Console.WriteLine($"Class6.Введите название специальности = {class6.Named}");
             Console.WriteLine($"Class6.Введите сокращение = {class6.Reduction}");
         }
-        public static void Print(Class7 class7)
-        {
-
-        }
 
         public static void Print(Class9 class9)
         {
@@ -96,15 +92,15 @@ namespace ConsoleApp1
         {
             Console.WriteLine($"Class10.Имя = {class10.Name}");
             Console.WriteLine($"Class10.Оклад = {class10.Salary}");
-            Print(class10.class11);
+            Print(class10.Class11);
 
         }
 
         public static void Print(Class11 class11)
         {
             Console.WriteLine($"Class11.Имя = {class11.Name}");
-            Print(class11.class9);
-            Print(class11.class12);
+            Print(class11.Class9);
+            Print(class11.Class12);
         }
 
         public static void Print(Class12 class12)
