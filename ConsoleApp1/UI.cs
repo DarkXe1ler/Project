@@ -31,15 +31,15 @@ namespace ConsoleApp1
             Console.WriteLine($"Para.Время начала перерыва = {para.BreakStartTime}");
             Console.WriteLine($"Para.Время окончания перерыва = {para.BreakEndTime}");
         }
-        public static void Print(Lesson class1)
+        public static void Print(Lesson lesson)
         {
-            Console.WriteLine($"Class1.Дата проведения = {class1.Date}");
-            Print(class1.Disciplina);
-            Print(class1.Sotrudnik);
-            Print(class1.Auditoria);
-            Print(class1.Group);
-            Print(class1.Para);
-            Print(class1.VidZanyatia);
+            Console.WriteLine($"Дата проведения занятия = {lesson.Date}");
+            Print(lesson.Disciplina);
+            Print(lesson.Sotrudnik);
+            Print(lesson.Auditoria);
+            Print(lesson.Group);
+            Print(lesson.Para);
+            Print(lesson.VidZanyatia);
         }
         public static void Print(Class2 class2)
         {

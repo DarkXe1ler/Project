@@ -43,11 +43,11 @@ namespace ConsoleApp1
 
             return new Para(TheStartTimeOfThePair, TheEndTimeOfThePair, BreakStartTime, BreakEndTime, smena);
         }
-        public static Lesson Class1()
+        public static Lesson Lesson()
         {
             Console.Write("Введите дату проведения: ");
             string date = Console.ReadLine();
-            return new Lesson(date, Class3(), Class9(), Class2(), Class4(), Class7(), Class14());
+            return new Lesson(date, Class3(), Class9(), Class2(), Class4(), Para(), Class14());
         }
 
         public static Class2 Class2()
@@ -102,11 +102,6 @@ namespace ConsoleApp1
             Console.WriteLine("Введите сокращение");
             string reduction = Console.ReadLine();
             return new Class6(named, reduction);
-        }
-        public static Class7 Class7()
-        {
-            return new Class7();
-
         }
 
         public static Class10 Class10()
