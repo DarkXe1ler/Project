@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ClassLibrary1</RootNamespace>
     <AssemblyName>ClassLibrary1</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
@@ -49,7 +49,7 @@
     <Compile Include="Class14.cs" />
     <Compile Include="Class15.cs" />
     <Compile Include="Class2.cs" />
-    <Compile Include="Class6.cs" />
+    <Compile Include="Specialization.cs" />
     <Compile Include="Class7.cs" />
     <Compile Include="Class9.cs" />
     <Compile Include="Class3.cs" />

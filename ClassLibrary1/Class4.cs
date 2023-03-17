@@ -15,10 +15,10 @@ namespace ClassLibrary1
             public int Number { get; }
             public int YearOfAdmission { get; }
 
-            public Class6 Class6 { get; }
+            public Specialization Class6 { get; }
             public Class9 Class9 { get; }
 
-            public Class4(string name, string abbreviation, int number, int yearOfAdmission, Class6 speciality, Class9 homeroomTeacher)
+            public Class4(string name, string abbreviation, int number, int yearOfAdmission, Specialization speciality, Class9 homeroomTeacher)
             {
                 this.Name = name;
                 this.Abbreviation = abbreviation;

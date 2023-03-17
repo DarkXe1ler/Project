@@ -95,13 +95,13 @@ namespace ConsoleApp1
             string patronymic = Console.ReadLine();
             return new Class9(surnname, name, patronymic, Class10());
         }
-        public static Class6 Class6()
+        public static Specialization Specialization()
         {
             Console.WriteLine("Введите название специальности");
             string named = Console.ReadLine();
             Console.WriteLine("Введите сокращение");
             string reduction = Console.ReadLine();
-            return new Class6(named, reduction);
+            return new Specialization(named, reduction);
         }
         public static Class7 Class7()
         {
@@ -160,7 +160,7 @@ namespace ConsoleApp1
             {
                 yearOfAdmission = DateTime.Now.Year;
             }
-            return new Class4(name, abbreviation, number, yearOfAdmission, Class6(), Class9());
+            return new Class4(name, abbreviation, number, yearOfAdmission, Specialization(), Class9());
 
 
         }
