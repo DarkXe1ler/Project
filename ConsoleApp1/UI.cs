@@ -31,15 +31,15 @@ namespace ConsoleApp1
             Console.WriteLine($"Para.Время начала перерыва = {para.BreakStartTime}");
             Console.WriteLine($"Para.Время окончания перерыва = {para.BreakEndTime}");
         }
-        public static void Print(Class1 class1)
+        public static void Print(Lesson class1)
         {
             Console.WriteLine($"Class1.Дата проведения = {class1.Date}");
-            Print(class1.Class3);
-            Print(class1.Class9);
-            Print(class1.Class2);
-            Print(class1.Class4);
-            Print(class1.Class7);
-            Print(class1.Class14);
+            Print(class1.Disciplina);
+            Print(class1.Sotrudnik);
+            Print(class1.Auditoria);
+            Print(class1.Group);
+            Print(class1.Para);
+            Print(class1.VidZanyatia);
         }
         public static void Print(Class2 class2)
         {
@@ -78,10 +78,6 @@ namespace ConsoleApp1
         {
             Console.WriteLine($"Class6.Введите название специальности = {class6.Named}");
             Console.WriteLine($"Class6.Введите сокращение = {class6.Reduction}");
-        }
-        public static void Print(Class7 class7)
-        {
-
         }
 
         public static void Print(Class9 class9)

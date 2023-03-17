@@ -43,11 +43,11 @@ namespace ConsoleApp1
 
             return new Para(TheStartTimeOfThePair, TheEndTimeOfThePair, BreakStartTime, BreakEndTime, smena);
         }
-        public static Class1 Class1()
+        public static Lesson Class1()
         {
             Console.Write("Введите дату проведения: ");
             string date = Console.ReadLine();
-            return new Class1(date, Class3(), Class9(), Class2(), Class4(), Class7(), Class14());
+            return new Lesson(date, Class3(), Class9(), Class2(), Class4(), Class7(), Class14());
         }
 
         public static Class2 Class2()
