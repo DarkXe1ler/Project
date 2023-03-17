@@ -112,8 +112,10 @@ namespace ConsoleApp1
         public static Class10 Class10()
         {
             Console.Write("Введите название: ");
+            string name = Console.ReadLine();
             Console.Write("Введите оклад: ");
-            return new Class10(name, salary, clas11());
+            string salary = Console.ReadLine();
+            return new Class10(name, salary, Class11());
         }
 
         public static Class11 Class11()
