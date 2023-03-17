@@ -96,15 +96,15 @@ namespace ConsoleApp1
         {
             Console.WriteLine($"Class10.Имя = {class10.Name}");
             Console.WriteLine($"Class10.Оклад = {class10.Salary}");
-            Print(class10.class11);
+            Print(class10.Class11);
 
         }
 
         public static void Print(Class11 class11)
         {
             Console.WriteLine($"Class11.Имя = {class11.Name}");
-            Print(class11.class9);
-            Print(class11.class12);
+            Print(class11.Class9);
+            Print(class11.Class12);
         }
 
         public static void Print(Class12 class12)
