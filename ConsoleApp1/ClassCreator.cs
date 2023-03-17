@@ -28,7 +28,7 @@ namespace ConsoleApp1
             return new ClassC();
         }
 
-        public static Class9 Class9()
+        public static Employee Employee()
         {
             Console.Write("Введите фамилию: ");
             string surnname = Console.ReadLine();
@@ -36,7 +36,7 @@ namespace ConsoleApp1
             string name = Console.ReadLine();
             Console.Write("Введите Отчество: ");
             string patronymic = Console.ReadLine();
-            return new Class9(surnname, name, patronymic, Class10());
+            return new Employee(surnname, name, patronymic, Class10());
         }
 
         public static Class10 Class10()
@@ -49,7 +49,7 @@ namespace ConsoleApp1
             Console.Write("Введите название: ");
             string name = Console.ReadLine();  
 
-            return new Class11(name, Class9(), Class12());
+            return new Class11(name, Employee(), Class12());
         }
 
         public static Class12 Class12()

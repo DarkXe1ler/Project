@@ -31,12 +31,12 @@ namespace ConsoleApp1
 
         }
 
-        public static void Print(Class9 class9)
+        public static void Print(Employee employee)
         {
-            Console.WriteLine($"Class9.Фамилия: {class9.Surname}");
-            Console.WriteLine($"Class9.Имя: {class9.Name}");
-            Console.WriteLine($"Class9.Отчество: {class9.Patronymic}");
-            Print(class9._class10);
+            Console.WriteLine($"Фамилия сотрудника : {employee.Surname}");
+            Console.WriteLine($"Имя сотрудника : {employee.Name}");
+            Console.WriteLine($"Отчество сотрудника : {employee.Patronymic}");
+            Print(employee.Position);
         }
 
         public static void Print(Class10 class10)
