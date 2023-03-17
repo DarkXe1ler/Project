@@ -52,7 +52,7 @@
     <Compile Include="Class6.cs" />
     <Compile Include="Class9.cs" />
     <Compile Include="Class3.cs" />
-    <Compile Include="Class4.cs" />
+    <Compile Include="Group.cs" />
     <Compile Include="Class5.cs" />
     <Compile Include="ClassA.cs" />
     <Compile Include="ClassB.cs" />

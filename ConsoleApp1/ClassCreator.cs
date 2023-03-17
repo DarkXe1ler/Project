@@ -47,7 +47,8 @@ namespace ConsoleApp1
         {
             Console.Write("Введите дату проведения: ");
             string date = Console.ReadLine();
-            return new Lesson(date, Class3(), Class9(), Class2(), Class4(), Para(), Class14());
+            return new Lesson(date, Class3(), Class9(), Class2(), Group(), Para(), Class14());
+
         }
 
         public static Class2 Class2()
@@ -82,8 +83,7 @@ namespace ConsoleApp1
             string отчество = Console.ReadLine();
             Console.Write("Введите дату рождения: ");
             string дата_рождения = Console.ReadLine();
-            //Class4 группа = new Class4();
-            return new Class5(имя, фамилия, отчество, дата_рождения, Class4());
+            return new Class5(имя, фамилия, отчество, дата_рождения, Group());
         }
         public static Class9 Class9()
         {
@@ -137,7 +137,7 @@ namespace ConsoleApp1
             return new Class15();
         }
 
-        public static Class4 Class4()
+        public static Group Group()
         {
             int yearOfAdmission;
             Console.Write("Введите имя: ");
@@ -155,7 +155,7 @@ namespace ConsoleApp1
             {
                 yearOfAdmission = DateTime.Now.Year;
             }
-            return new Class4(name, abbreviation, number, yearOfAdmission, Class6(), Class9());
+            return new Group(name, abbreviation, number, yearOfAdmission, Class6(), Class9());
 
 
         }

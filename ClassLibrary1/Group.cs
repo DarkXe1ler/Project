@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ClassLibrary1
 {
 
-        public class Class4
+        public class Group
         {
             //group
             public string Name { get; }
@@ -15,17 +15,17 @@ namespace ClassLibrary1
             public int Number { get; }
             public int YearOfAdmission { get; }
 
-            public Class6 Class6 { get; }
-            public Class9 Class9 { get; }
+            public Class6 Speciality { get; }
+            public Class9 HomeroomTeacher { get; }
 
-            public Class4(string name, string abbreviation, int number, int yearOfAdmission, Class6 speciality, Class9 homeroomTeacher)
+            public Group(string name, string abbreviation, int number, int yearOfAdmission, Class6 speciality, Class9 homeroomTeacher)
             {
                 this.Name = name;
                 this.Abbreviation = abbreviation;
                 this.Number = number;
                 this.YearOfAdmission = yearOfAdmission;
-                Class6 = speciality;
-                Class9 = homeroomTeacher;
+                Speciality = speciality;
+                HomeroomTeacher = homeroomTeacher;
 
             }
         }
