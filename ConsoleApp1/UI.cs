@@ -80,6 +80,11 @@ namespace ConsoleApp1
             Console.WriteLine($"Class6.Введите сокращение = {class6.Reduction}");
         }
 
+        public static void Print(Class8 Smena)
+        {
+            Console.WriteLine($"Class6.Введите смену:  = {Smena.Named}");
+        }
+
         public static void Print(Class9 class9)
         {
             Console.WriteLine($"Class9.Фамилия: {class9.Surname}");
