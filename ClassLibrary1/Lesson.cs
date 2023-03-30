@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,14 +9,14 @@ namespace ClassLibrary1
     public class Lesson
     {
         public string Date { get; }
-        public Class3 Disciplina { get; }
-        public Class9 Sotrudnik { get; }
-        public Class2 Auditoria { get; }
-        public Class4 Group { get; }
+        public Discipline Disciplina { get; }
+        public Employee Sotrudnik { get; }
+        public Auditoria Auditoria { get; }
+        public Group Group { get; }
         public Para Para { get; }
         public Class14 VidZanyatia { get; }
 
-        public Lesson(string date, Class3 disciplina, Class9 sotrudnik, Class2 auditoria, Class4 group, Para para, Class14 vidzanyatia)
+        public Lesson(string date, Discipline disciplina, Employee sotrudnik, Auditoria auditoria, Group group, Para para, Class14 vidzanyatia)
         {
             Date = date;
             Disciplina = disciplina;

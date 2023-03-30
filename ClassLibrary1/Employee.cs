@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    public class Class9
+    public class Employee
     {
         public string Surname { get; }
         public string Name { get; }
         public string Patronymic { get; }
 
-        public Class10 _class10 { get; }
+        public Class10 Position { get; }
 
-        public Class9(string surname, string name, string patronymic, Class10 class10) 
+        public Employee(string surname, string name, string patronymic, Class10 position) 
         {
             Surname= surname;
             Name= name;
             Patronymic= patronymic;
-            _class10 = class10;
+            Position = position;
         }
     }
 }
