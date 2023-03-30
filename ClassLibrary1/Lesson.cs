@@ -10,13 +10,13 @@ namespace ClassLibrary1
     {
         public string Date { get; }
         public Discipline Disciplina { get; }
-        public Class9 Sotrudnik { get; }
+        public Employee Sotrudnik { get; }
         public Auditoria Auditoria { get; }
         public Group Group { get; }
         public Para Para { get; }
         public Class14 VidZanyatia { get; }
 
-        public Lesson(string date, Discipline disciplina, Class9 sotrudnik, Auditoria auditoria, Group group, Para para, Class14 vidzanyatia)
+        public Lesson(string date, Discipline disciplina, Employee sotrudnik, Auditoria auditoria, Group group, Para para, Class14 vidzanyatia)
         {
             Date = date;
             Disciplina = disciplina;

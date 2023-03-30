@@ -42,7 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class11.cs" />
     <Compile Include="Class8.cs" />
+    <Compile Include="Discipline.cs" />
     <Compile Include="Lesson.cs" />
     <Compile Include="Class10.cs" />
     <Compile Include="Division.cs" />
@@ -52,7 +55,6 @@
     <Compile Include="Class15.cs" />
     <Compile Include="Auditoria.cs" />
     <Compile Include="Class6.cs" />
-    <Compile Include="Class3.cs" />
     <Compile Include="Group.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="ClassA.cs" />
