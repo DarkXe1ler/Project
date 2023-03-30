@@ -85,27 +85,27 @@ namespace ConsoleApp1
             Console.WriteLine($"Class6.Введите смену:  = {Smena.Named}");
         }
 
-        public static void Print(Class9 class9)
+        public static void Print(Employee employee)
         {
-            Console.WriteLine($"Director.Фамилия: {class9.Surname}");
-            Console.WriteLine($"Director.Имя: {class9.Name}");
-            Console.WriteLine($"Director.Отчество: {class9.Patronymic}");
-            Print(class9._class10);
+            Console.WriteLine($"Фамилия сотрудника : {employee.Surname}");
+            Console.WriteLine($"Имя сотрудника : {employee.Name}");
+            Console.WriteLine($"Отчество сотрудника : {employee.Patronymic}");
+            Print(employee.Position);
         }
 
         public static void Print(Class10 class10)
         {
             Console.WriteLine($"Class10.Имя = {class10.Name}");
             Console.WriteLine($"Class10.Оклад = {class10.Salary}");
-            Print(class10.Class11);
+            Print(class10.Division);
 
         }
 
-        public static void Print(Department class11)
+        public static void Print(Division division)
         {
-            Console.WriteLine($"Class11.Имя = {class11.Name}");
-            Print(class11.Director);
-            Print(class11.Organization);
+            Console.WriteLine($"Class11.Имя = {division.Name}");
+            Print(division.Director);
+            Print(division.Organization);
         }
 
         public static void Print(Class12 class12)

@@ -16,9 +16,9 @@ namespace ClassLibrary1
             public int YearOfAdmission { get; }
 
             public Class6 Speciality { get; }
-            public Class9 HomeroomTeacher { get; }
+            public Employee HomeroomTeacher { get; }
 
-            public Group(string name, string abbreviation, int number, int yearOfAdmission, Class6 speciality, Class9 homeroomTeacher)
+            public Group(string name, string abbreviation, int number, int yearOfAdmission, Class6 speciality, Employee homeroomTeacher)
             {
                 this.Name = name;
                 this.Abbreviation = abbreviation;

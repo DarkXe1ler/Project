@@ -9,11 +9,11 @@ namespace ClassLibrary1
     public class Division
     {
         public string Name { get; }
-        public Class9 Director { get; }
+        public Employee Director { get; }
         public Class12 Organization { get; }
 
 
-        public Division(string name, Class9 director, Class12 organization)
+        public Division(string name, Employee director, Class12 organization)
         {
             Name = name;
             Director = director;

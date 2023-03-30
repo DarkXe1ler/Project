@@ -28,7 +28,6 @@ namespace ConsoleApp1
         {
             return new ClassC();
         }
-
         public static Para Para()
         {
             Console.Write("Укажите время начала пары: ");
@@ -47,7 +46,7 @@ namespace ConsoleApp1
         {
             Console.Write("Введите дату проведения: ");
             string date = Console.ReadLine();
-            return new Lesson(date, Discipline(), Class9(), Auditoria(), Group(), Para(), Class14());
+            return new Lesson(date, Discipline(), Employee(), Auditoria(), Group(), Para(), Class14());
 
         }
 
@@ -59,8 +58,10 @@ namespace ConsoleApp1
             string mesta = Console.ReadLine();
             Console.Write("Введите количество окон: ");
             string okna = Console.ReadLine();
-            return new Auditoria(aud, Class9(), mesta, okna, Class15());
+            return new Auditoria(aud, Employee(), mesta, okna, Class15());
         }
+
+
         public static Discipline Discipline()
         {
             Console.Write("Введите дисциплину: ");
@@ -68,7 +69,6 @@ namespace ConsoleApp1
             Console.Write("Введите сокращение дисциплины: ");
             string shortName = Console.ReadLine();
             return new Discipline(name, shortName);
-
         }
 
 
@@ -86,11 +86,7 @@ namespace ConsoleApp1
             return new Student(name, surname, middlename, dateOfBirth, Group());
         }
 
-        
-
-
-
-        public static Class9 Class9()
+        public static Employee Employee()
         {
             Console.Write("Введите фамилию: ");
             string surnname = Console.ReadLine();
@@ -98,7 +94,7 @@ namespace ConsoleApp1
             string name = Console.ReadLine();
             Console.Write("Введите Отчество: ");
             string patronymic = Console.ReadLine();
-            return new Class9(surnname, name, patronymic, Class10());
+            return new Employee(surnname, name, patronymic, Class10());
         }
         public static Class6 Class6()
         {
@@ -131,7 +127,8 @@ namespace ConsoleApp1
             Console.Write("Введите название подразделения: ");
             string name = Console.ReadLine();  
 
-            return new Division(name, Class9(), Class12());
+
+            return new Division(name, Employee(), Class12());
         }
 
         public static Class12 Class12()
@@ -168,7 +165,7 @@ namespace ConsoleApp1
             {
                 yearOfAdmission = DateTime.Now.Year;
             }
-            return new Group(name, abbreviation, number, yearOfAdmission, Class6(), Class9());
+            return new Group(name, abbreviation, number, yearOfAdmission, Class6(), Employee());
 
 
         }
