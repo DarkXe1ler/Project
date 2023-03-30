@@ -50,10 +50,10 @@ namespace ConsoleApp1
             Print(class2.Class15);
         }
 
-        public static void Print(Class3 class3)
+        public static void Print(Discipline discipline)
         {
-            Console.WriteLine($"Название дисциплины: {class3.Name}");
-            Console.WriteLine($"Сокращение дисциплины: {class3.ShortName}");
+            Console.WriteLine($"Название дисциплины: {discipline.Name}");
+            Console.WriteLine($"Сокращение дисциплины: {discipline.ShortName}");
         }
 
         public static void Print(Group group)

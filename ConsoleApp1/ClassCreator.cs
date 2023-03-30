@@ -47,7 +47,7 @@ namespace ConsoleApp1
         {
             Console.Write("Введите дату проведения: ");
             string date = Console.ReadLine();
-            return new Lesson(date, Class3(), Class9(), Class2(), Group(), Para(), Class14());
+            return new Lesson(date, Discipline(), Class9(), Class2(), Group(), Para(), Class14());
 
         }
 
@@ -61,13 +61,13 @@ namespace ConsoleApp1
             string okna = Console.ReadLine();
             return new Class2(aud, Class9(), mesta, okna, Class15());
         }
-        public static Class3 Class3()
+        public static Discipline Discipline()
         {
             Console.Write("Введите дисциплину: ");
             string name = Console.ReadLine();
             Console.Write("Введите сокращение дисциплины: ");
             string shortName = Console.ReadLine();
-            return new Class3(name, shortName);
+            return new Discipline(name, shortName);
 
         }
 
