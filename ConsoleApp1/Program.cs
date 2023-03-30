@@ -15,12 +15,23 @@ namespace ConsoleApp1
                 Console.Write("Какой класс Вы хотите создать: ");
                 switch (Console.ReadLine())
                 {
-                    case "ClassA": UI.Print(ClassCreator.ClassA()); break;
-                    case "ClassB": UI.Print(ClassCreator.ClassB()); break;
+                    case "Пара": UI.Print(ClassCreator.Para()); break;
                     case "Подразделение": UI.Print(ClassCreator.Class11()); break;
+<<<<<<< HEAD
                     case "Дисциплина": UI.Print(ClassCreator.Class3()); break;
                     case "Class5": UI.Print(ClassCreator.Class5());break;
                     case "Сотрудник": UI.Print(ClassCreator.Employee()); break;
+=======
+                    case "Должность": UI.Print(ClassCreator.Class10()); break;
+                    case "Дисциплина": UI.Print(ClassCreator.Discipline()); break;
+                    case "Студент": UI.Print(ClassCreator.Student());break;
+                    case "Смена": UI.Print(ClassCreator.Smena());break;
+                    case "Сотрудник": UI.Print(ClassCreator.Class9()); break;
+                    case "Аудитория": UI.Print(ClassCreator.Auditoria()); break;
+                    case "Занятие": UI.Print(ClassCreator.Lesson()); break;
+                    case "Специальность": UI.Print(ClassCreator.Class6()); break;
+                    case "Группа": UI.Print(ClassCreator.Group()); break;
+>>>>>>> dev
                     default: Console.WriteLine("Такой класс не реализован"); break;
                 }
             }
