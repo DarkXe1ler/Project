@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    public class Class2
+    public class Auditoria
     {
         public string Name { get; }
         public Class9 Class9 { get; }
@@ -14,7 +14,7 @@ namespace ClassLibrary1
         public string NumberOkon { get; }
         public Class15 Class15 { get; }
 
-        public Class2(string name, Class9 class9, string numbermest, string numberokon, Class15 class15)
+        public Auditoria(string name, Class9 class9, string numbermest, string numberokon, Class15 class15)
         {
             Name = name;
             Class9 = class9;
