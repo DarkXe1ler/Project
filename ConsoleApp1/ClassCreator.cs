@@ -73,17 +73,17 @@ namespace ConsoleApp1
 
 
 
-        public static Class5 Class5()
+        public static Student Student()
         {
-            Console.Write("Введите имя: ");
-            string имя = Console.ReadLine();
-            Console.Write("Введите фамилию: ");
-            string фамилия = Console.ReadLine();
-            Console.Write("Введите отчество: ");
-            string отчество = Console.ReadLine();
-            Console.Write("Введите дату рождения: ");
-            string дата_рождения = Console.ReadLine();
-            return new Class5(имя, фамилия, отчество, дата_рождения, Group());
+            Console.Write("Введите имя студента: ");
+            string name = Console.ReadLine();
+            Console.Write("Введите фамилию студента: ");
+            string surname = Console.ReadLine();
+            Console.Write("Введите отчество студента: ");
+            string middlename = Console.ReadLine();
+            Console.Write("Введите дату рождения студента: ");
+            string dateOfBirth = Console.ReadLine();
+            return new Student(name, surname, middlename, dateOfBirth, Group());
         }
         public static Class9 Class9()
         {
