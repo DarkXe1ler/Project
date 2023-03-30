@@ -20,6 +20,7 @@ namespace ConsoleApp1
                     case "Должность": UI.Print(ClassCreator.Class10()); break;
                     case "Дисциплина": UI.Print(ClassCreator.Discipline()); break;
                     case "Студент": UI.Print(ClassCreator.Student());break;
+                    case "Смена": UI.Print(ClassCreator.Smena());break;
                     case "Сотрудник": UI.Print(ClassCreator.Class9()); break;
                     case "Аудитория": UI.Print(ClassCreator.Auditoria()); break;
                     case "Занятие": UI.Print(ClassCreator.Lesson()); break;

@@ -85,6 +85,11 @@ namespace ConsoleApp1
             string dateOfBirth = Console.ReadLine();
             return new Student(name, surname, middlename, dateOfBirth, Group());
         }
+
+        
+
+
+
         public static Class9 Class9()
         {
             Console.Write("Введите фамилию: ");
@@ -102,6 +107,14 @@ namespace ConsoleApp1
             Console.WriteLine("Введите сокращение");
             string reduction = Console.ReadLine();
             return new Class6(named, reduction);
+        }
+
+
+        public static Class8 Smena()
+        {
+            Console.WriteLine("Введите название смены: ");
+            string name = Console.ReadLine();
+            return new Class8(name);
         }
 
         public static Class10 Class10()

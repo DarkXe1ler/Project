@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class8.cs" />
     <Compile Include="Lesson.cs" />
     <Compile Include="Class10.cs" />
     <Compile Include="Division.cs" />
