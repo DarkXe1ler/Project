@@ -82,9 +82,9 @@ namespace ConsoleApp1
 
         public static void Print(Class9 class9)
         {
-            Console.WriteLine($"Class9.Фамилия: {class9.Surname}");
-            Console.WriteLine($"Class9.Имя: {class9.Name}");
-            Console.WriteLine($"Class9.Отчество: {class9.Patronymic}");
+            Console.WriteLine($"Director.Фамилия: {class9.Surname}");
+            Console.WriteLine($"Director.Имя: {class9.Name}");
+            Console.WriteLine($"Director.Отчество: {class9.Patronymic}");
             Print(class9._class10);
         }
 
@@ -96,11 +96,11 @@ namespace ConsoleApp1
 
         }
 
-        public static void Print(Class11 class11)
+        public static void Print(Department class11)
         {
             Console.WriteLine($"Class11.Имя = {class11.Name}");
-            Print(class11.Class9);
-            Print(class11.Class12);
+            Print(class11.Director);
+            Print(class11.Organization);
         }
 
         public static void Print(Class12 class12)
