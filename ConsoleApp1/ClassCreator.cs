@@ -47,11 +47,11 @@ namespace ConsoleApp1
         {
             Console.Write("Введите дату проведения: ");
             string date = Console.ReadLine();
-            return new Lesson(date, Class3(), Class9(), Class2(), Group(), Para(), Class14());
+            return new Lesson(date, Discipline(), Class9(), Auditoria(), Group(), Para(), Class14());
 
         }
 
-        public static Class2 Class2()
+        public static Auditoria Auditoria()
         {
             Console.Write("Введите название аудитории: ");
             string aud = Console.ReadLine();
@@ -59,31 +59,31 @@ namespace ConsoleApp1
             string mesta = Console.ReadLine();
             Console.Write("Введите количество окон: ");
             string okna = Console.ReadLine();
-            return new Class2(aud, Class9(), mesta, okna, Class15());
+            return new Auditoria(aud, Class9(), mesta, okna, Class15());
         }
-        public static Class3 Class3()
+        public static Discipline Discipline()
         {
             Console.Write("Введите дисциплину: ");
             string name = Console.ReadLine();
             Console.Write("Введите сокращение дисциплины: ");
             string shortName = Console.ReadLine();
-            return new Class3(name, shortName);
+            return new Discipline(name, shortName);
 
         }
 
 
 
-        public static Class5 Class5()
+        public static Student Student()
         {
-            Console.Write("Введите имя: ");
-            string имя = Console.ReadLine();
-            Console.Write("Введите фамилию: ");
-            string фамилия = Console.ReadLine();
-            Console.Write("Введите отчество: ");
-            string отчество = Console.ReadLine();
-            Console.Write("Введите дату рождения: ");
-            string дата_рождения = Console.ReadLine();
-            return new Class5(имя, фамилия, отчество, дата_рождения, Group());
+            Console.Write("Введите имя студента: ");
+            string name = Console.ReadLine();
+            Console.Write("Введите фамилию студента: ");
+            string surname = Console.ReadLine();
+            Console.Write("Введите отчество студента: ");
+            string middlename = Console.ReadLine();
+            Console.Write("Введите дату рождения студента: ");
+            string dateOfBirth = Console.ReadLine();
+            return new Student(name, surname, middlename, dateOfBirth, Group());
         }
 
         
@@ -123,15 +123,15 @@ namespace ConsoleApp1
             string name = Console.ReadLine();
             Console.Write("Введите оклад: ");
             string salary = Console.ReadLine();
-            return new Class10(name, salary, Class11());
+            return new Class10(name, salary, Division());
         }
 
-        public static Class11 Class11()
+        public static Division Division()
         {
-            Console.Write("Введите название: ");
+            Console.Write("Введите название подразделения: ");
             string name = Console.ReadLine();  
 
-            return new Class11(name, Class9(), Class12());
+            return new Division(name, Class9(), Class12());
         }
 
         public static Class12 Class12()

@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 namespace ClassLibrary1
 {
     
-    public class Class3
+    public class Discipline
     {
         //https://docs.google.com/document/d/1qCEMkbMRvvHP361IFDeWgSpHfVRUp6BV67nrsjl3fSw/edit
         public string Name { get; }
         public string ShortName { get; }
-        public Class3(string name, string shortName)
+        public Discipline(string name, string shortName)
         {
             Name = name;
             ShortName = shortName;

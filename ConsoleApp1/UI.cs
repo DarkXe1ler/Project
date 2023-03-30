@@ -41,19 +41,19 @@ namespace ConsoleApp1
             Print(lesson.Para);
             Print(lesson.VidZanyatia);
         }
-        public static void Print(Class2 class2)
+        public static void Print(Auditoria Auditoria)
         {
-            Console.WriteLine($"Class2.Название = {class2.Name}");
-            Print(class2.Class9);
-            Console.WriteLine($"Class2.Количество мест = {class2.NumberMest}");
-            Console.WriteLine($"Class2.Количество окон = {class2.NumberOkon}");
-            Print(class2.Class15);
+            Console.WriteLine($"Auditoria.Название = {Auditoria.Name}");
+            Print(Auditoria.Class9);
+            Console.WriteLine($"Auditoria.Количество мест = {Auditoria.NumberMest}");
+            Console.WriteLine($"Auditoria.Количество окон = {Auditoria.NumberOkon}");
+            Print(Auditoria.Class15);
         }
 
-        public static void Print(Class3 class3)
+        public static void Print(Discipline discipline)
         {
-            Console.WriteLine($"Название дисциплины: {class3.Name}");
-            Console.WriteLine($"Сокращение дисциплины: {class3.ShortName}");
+            Console.WriteLine($"Название дисциплины: {discipline.Name}");
+            Console.WriteLine($"Сокращение дисциплины: {discipline.ShortName}");
         }
 
         public static void Print(Group group)
@@ -66,13 +66,13 @@ namespace ConsoleApp1
             Print(group.Speciality);
         }
 
-        public static void Print(Class5 class5)
+        public static void Print(Student student)
         {
-            Console.WriteLine($"Class5.Фамилия = {class5.Фамилия}");
-            Console.WriteLine($"Class5.Имя = {class5.Имя}");
-            Console.WriteLine($"Class5. Отчество = {class5.Отчество}");
-            Console.WriteLine($"Class5.Дата_Рождения = {class5.Дата_Рождения}");
-            Print(class5.Группа);
+            Console.WriteLine($"Student Фамилия Студента = {student.Surname}");
+            Console.WriteLine($"Student Имя Студента = {student.Name}");
+            Console.WriteLine($"Student Отчество Студента = {student.Middlename}");
+            Console.WriteLine($"Student Дата Рождения Студента = {student.DateOfBirth}");
+            Print(student.Group);
         }
         public static void Print(Class6 class6)
         {
@@ -87,9 +87,9 @@ namespace ConsoleApp1
 
         public static void Print(Class9 class9)
         {
-            Console.WriteLine($"Class9.Фамилия: {class9.Surname}");
-            Console.WriteLine($"Class9.Имя: {class9.Name}");
-            Console.WriteLine($"Class9.Отчество: {class9.Patronymic}");
+            Console.WriteLine($"Director.Фамилия: {class9.Surname}");
+            Console.WriteLine($"Director.Имя: {class9.Name}");
+            Console.WriteLine($"Director.Отчество: {class9.Patronymic}");
             Print(class9._class10);
         }
 
@@ -101,11 +101,11 @@ namespace ConsoleApp1
 
         }
 
-        public static void Print(Class11 class11)
+        public static void Print(Department class11)
         {
             Console.WriteLine($"Class11.Имя = {class11.Name}");
-            Print(class11.Class9);
-            Print(class11.Class12);
+            Print(class11.Director);
+            Print(class11.Organization);
         }
 
         public static void Print(Class12 class12)
