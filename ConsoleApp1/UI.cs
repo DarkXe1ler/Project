@@ -66,13 +66,13 @@ namespace ConsoleApp1
             Print(group.Speciality);
         }
 
-        public static void Print(Class5 class5)
+        public static void Print(Student student)
         {
-            Console.WriteLine($"Class5.Фамилия = {class5.Фамилия}");
-            Console.WriteLine($"Class5.Имя = {class5.Имя}");
-            Console.WriteLine($"Class5. Отчество = {class5.Отчество}");
-            Console.WriteLine($"Class5.Дата_Рождения = {class5.Дата_Рождения}");
-            Print(class5.Группа);
+            Console.WriteLine($"Student Фамилия Студента = {student.Surname}");
+            Console.WriteLine($"Student Имя Студента = {student.Name}");
+            Console.WriteLine($"Student Отчество Студента = {student.Middlename}");
+            Console.WriteLine($"Student Дата Рождения Студента = {student.DateOfBirth}");
+            Print(student.Group);
         }
         public static void Print(Class6 class6)
         {
