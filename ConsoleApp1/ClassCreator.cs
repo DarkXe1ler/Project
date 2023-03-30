@@ -73,17 +73,17 @@ namespace ConsoleApp1
 
 
 
-        public static Class5 Class5()
+        public static Student Student()
         {
-            Console.Write("Введите имя: ");
-            string имя = Console.ReadLine();
-            Console.Write("Введите фамилию: ");
-            string фамилия = Console.ReadLine();
-            Console.Write("Введите отчество: ");
-            string отчество = Console.ReadLine();
-            Console.Write("Введите дату рождения: ");
-            string дата_рождения = Console.ReadLine();
-            return new Class5(имя, фамилия, отчество, дата_рождения, Group());
+            Console.Write("Введите имя студента: ");
+            string name = Console.ReadLine();
+            Console.Write("Введите фамилию студента: ");
+            string surname = Console.ReadLine();
+            Console.Write("Введите отчество студента: ");
+            string middlename = Console.ReadLine();
+            Console.Write("Введите дату рождения студента: ");
+            string dateOfBirth = Console.ReadLine();
+            return new Student(name, surname, middlename, dateOfBirth, Group());
         }
         public static Class9 Class9()
         {
@@ -110,15 +110,15 @@ namespace ConsoleApp1
             string name = Console.ReadLine();
             Console.Write("Введите оклад: ");
             string salary = Console.ReadLine();
-            return new Class10(name, salary, Class11());
+            return new Class10(name, salary, Division());
         }
 
-        public static Class11 Class11()
+        public static Division Division()
         {
-            Console.Write("Введите название: ");
+            Console.Write("Введите название подразделения: ");
             string name = Console.ReadLine();  
 
-            return new Class11(name, Class9(), Class12());
+            return new Division(name, Class9(), Class12());
         }
 
         public static Class12 Class12()
