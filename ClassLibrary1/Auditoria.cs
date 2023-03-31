@@ -9,18 +9,18 @@ namespace ClassLibrary1
     public class Auditoria
     {
         public string Name { get; }
-        public Employee Class9 { get; }
+        public Employee Employee { get; }
         public string NumberMest { get; }
         public string NumberOkon { get; }
-        public Class15 Class15 { get; }
+        public Class15 Oborydovanie { get; }
 
-        public Auditoria(string name, Employee class9, string numbermest, string numberokon, Class15 class15)
+        public Auditoria(string name, Employee employee, string numbermest, string numberokon, Class15 oborydovanie)
         {
             Name = name;
-            Class9 = class9;
+            Employee = employee;
             NumberMest = numbermest;
             NumberOkon = numberokon;
-            Class15 = class15;
+            Oborydovanie = oborydovanie;
         }
     }
 }
