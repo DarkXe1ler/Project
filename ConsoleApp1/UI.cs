@@ -74,10 +74,17 @@ namespace ConsoleApp1
             Console.WriteLine($"Student Дата Рождения Студента = {student.DateOfBirth}");
             Print(student.Group);
         }
+<<<<<<< HEAD
         public static void Print(Specialization specialization)
         {
             Console.WriteLine($"Class6.Введите название специальности = {specialization.Named}");
             Console.WriteLine($"Class6.Введите сокращение = {specialization.Reduction}");
+=======
+        public static void Print(Specialization Specialization)
+        {
+            Console.WriteLine($"Class6.Введите название специальности = {Specialization.Named}");
+            Console.WriteLine($"Class6.Введите сокращение = {Specialization.Reduction}");
+>>>>>>> d4a5461feb0600e827b2ba386a46313144cdc7b0
         }
 
         public static void Print(Class8 Smena)

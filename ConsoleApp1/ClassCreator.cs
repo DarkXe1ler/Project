@@ -163,7 +163,11 @@ namespace ConsoleApp1
             {
                 yearOfAdmission = DateTime.Now.Year;
             }
+<<<<<<< HEAD
             return new Group(name, abbreviation, number, yearOfAdmission, Specialization(), Employee());
+=======
+            return new Class4(name, abbreviation, number, yearOfAdmission, Specialization(), Class9());
+>>>>>>> d4a5461feb0600e827b2ba386a46313144cdc7b0
 
 
         }
