@@ -52,7 +52,7 @@
     <Compile Include="Class14.cs" />
     <Compile Include="Class15.cs" />
     <Compile Include="Auditoria.cs" />
-    <Compile Include="Class6.cs" />
+    <Compile Include="Specialization.cs" />
     <Compile Include="Group.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="ClassA.cs" />
