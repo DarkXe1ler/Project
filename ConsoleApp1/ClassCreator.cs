@@ -82,7 +82,7 @@ namespace ConsoleApp1
             Console.Write("Введите отчество студента: ");
             string middlename = Console.ReadLine();
             Console.Write("Введите дату рождения студента: ");
-            string dateOfBirth = Console.ReadLine();
+            int dateOfBirth = int.Parse( Console.ReadLine());
             return new Student(name, surname, middlename, dateOfBirth, Group());
         }
 
