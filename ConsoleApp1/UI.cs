@@ -44,10 +44,10 @@ namespace ConsoleApp1
         public static void Print(Auditoria Auditoria)
         {
             Console.WriteLine($"Auditoria.Название = {Auditoria.Name}");
-            Print(Auditoria.Class9);
+            Print(Auditoria.Employee);
             Console.WriteLine($"Auditoria.Количество мест = {Auditoria.NumberMest}");
             Console.WriteLine($"Auditoria.Количество окон = {Auditoria.NumberOkon}");
-            Print(Auditoria.Class15);
+            Print(Auditoria.Oborydovanie);
         }
 
         public static void Print(Discipline discipline)
