@@ -38,7 +38,7 @@ namespace ConsoleApp1
             string BreakStartTime = Console.ReadLine();
             Console.Write("Укажите время окончания перерыва: ");
             string BreakEndTime = Console.ReadLine();
-            return new Para(TheStartTimeOfThePair, TheEndTimeOfThePair, BreakStartTime, BreakEndTime, Smena());
+            return new Para(TheStartTimeOfThePair, TheEndTimeOfThePair, BreakStartTime, BreakEndTime, new Smena());
         }
         public static Lesson Lesson()
         {
@@ -94,7 +94,7 @@ namespace ConsoleApp1
             string patronymic = Console.ReadLine();
             return new Employee(surnname, name, patronymic, Class10());
         }
-        public static Specialization specialization()
+        public static Specialization Specialization()
         {
             Console.WriteLine("Введите название специальности");
             string named = Console.ReadLine();
@@ -163,7 +163,7 @@ namespace ConsoleApp1
             {
                 yearOfAdmission = DateTime.Now.Year;
             }
-            return new Group(name, abbreviation, number, yearOfAdmission, specialization(), Employee());
+            return new Group(name, abbreviation, number, yearOfAdmission, Specialization(), Employee());
 
 
         }
