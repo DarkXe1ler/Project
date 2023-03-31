@@ -51,10 +51,20 @@
     <Compile Include="Employee.cs" />
     <Compile Include="Class14.cs" />
     <Compile Include="Class15.cs" />
+<<<<<<< HEAD
     <Compile Include="Auditoria.cs" />
-    <Compile Include="Class6.cs" />
+    <Compile Include="Specialization.cs" />
     <Compile Include="Group.cs" />
     <Compile Include="Student.cs" />
+=======
+    <Compile Include="Class2.cs" />
+    <Compile Include="Specialization.cs" />
+    <Compile Include="Class7.cs" />
+    <Compile Include="Class9.cs" />
+    <Compile Include="Class3.cs" />
+    <Compile Include="Class4.cs" />
+    <Compile Include="Class5.cs" />
+>>>>>>> d4a5461feb0600e827b2ba386a46313144cdc7b0
     <Compile Include="ClassA.cs" />
     <Compile Include="ClassB.cs" />
     <Compile Include="ClassC.cs" />
