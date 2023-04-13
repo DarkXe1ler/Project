@@ -9,12 +9,12 @@ namespace ClassLibrary1
 {
     public class Para
     {
-        public Smena Smena { get; }
-        public string TheStartTimeOfThePair { get; }
-        public string TheEndTimeOfThePair { get; }
-        public string BreakStartTime { get; }
-        public string BreakEndTime { get; }
-        public Para(string theStartTimeOfThePair, string theEndTimeOfThePair, string breakStartTime, string breakEndTime, Smena smena)
+        public Class8 Smena { get; }
+        public DateTime TheStartTimeOfThePair { get; }
+        public DateTime TheEndTimeOfThePair { get; }
+        public DateTime BreakStartTime { get; }
+        public DateTime BreakEndTime { get; }
+        public Para(DateTime theStartTimeOfThePair, DateTime theEndTimeOfThePair, DateTime breakStartTime, DateTime breakEndTime, Class8 smena)
         {
             TheStartTimeOfThePair = theStartTimeOfThePair;
             TheEndTimeOfThePair = theEndTimeOfThePair;
