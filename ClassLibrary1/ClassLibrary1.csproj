@@ -49,7 +49,7 @@
     <Compile Include="Division.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Class14.cs" />
-    <Compile Include="Class15.cs" />
+    <Compile Include="Oborydovanie.cs" />
     <Compile Include="Auditoria.cs" />
     <Compile Include="Organization.cs" />
     <Compile Include="Specialization.cs" />

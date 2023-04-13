@@ -10,11 +10,11 @@ namespace ClassLibrary1
     {
         public string Name { get; }
         public Employee Employee { get; }
-        public string NumberMest { get; }
-        public string NumberOkon { get; }
-        public Class15 Oborydovanie { get; }
+        public int NumberMest { get; }
+        public int NumberOkon { get; }
+        public List<Oborydovanie> Oborydovanie { get; }
 
-        public Auditoria(string name, Employee employee, string numbermest, string numberokon, Class15 oborydovanie)
+        public Auditoria(string name, Employee employee, int numbermest, int numberokon, List<Oborydovanie> oborydovanie)
         {
             Name = name;
             Employee = employee;

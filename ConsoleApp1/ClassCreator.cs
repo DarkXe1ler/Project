@@ -53,10 +53,16 @@ namespace ConsoleApp1
             Console.Write("Введите название аудитории: ");
             string aud = Console.ReadLine();
             Console.Write("Введите количество мест: ");
-            string mesta = Console.ReadLine();
+            int.TryParse(Console.ReadLine(), out int mesta);
             Console.Write("Введите количество окон: ");
-            string okna = Console.ReadLine();
-            return new Auditoria(aud, Employee(), mesta, okna, Class15());
+            int.TryParse(Console.ReadLine(), out int okna);
+            Console.Write("Введите список оборудования, чтобы остановить ввод - введите 0");
+            List<Oborydovanie> oborydovanie = new List<Oborydovanie>();
+            while (Console.ReadLine() != "0")
+            {
+                oborydovanie.Add(Oborydovanie());
+            }
+            return new Auditoria(aud, Employee(), mesta, okna, oborydovanie);
         }
 
 
@@ -145,9 +151,9 @@ namespace ConsoleApp1
             return new Class14();
         }
 
-        public static Class15 Class15()
+        public static Oborydovanie Oborydovanie()
         {
-            return new Class15();
+            return new Oborydovanie();
         }
 
         public static Group Group()
