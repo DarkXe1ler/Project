@@ -8,5 +8,6 @@ namespace ClassLibrary1
 {
     public class Smena
     {
+
     }
 }
