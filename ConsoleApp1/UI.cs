@@ -47,7 +47,10 @@ namespace ConsoleApp1
             Print(Auditoria.Employee);
             Console.WriteLine($"Auditoria.Количество мест = {Auditoria.NumberMest}");
             Console.WriteLine($"Auditoria.Количество окон = {Auditoria.NumberOkon}");
-            Print(Auditoria.Oborydovanie);
+            for (int i = 0; i < Auditoria.Oborydovanie.Count; i++)
+            {
+                Print(Auditoria.Oborydovanie[i]);
+            }
         }
 
         public static void Print(Discipline discipline)
@@ -120,7 +123,7 @@ namespace ConsoleApp1
 
         }
 
-        public static void Print(Class15 class15)
+        public static void Print(Oborydovanie oborydovanie)
         {
 
         }
