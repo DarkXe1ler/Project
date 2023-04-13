@@ -80,7 +80,12 @@ namespace ConsoleApp1
             Console.Write("Введите отчество студента: ");
             string middlename = Console.ReadLine();
             Console.Write("Введите дату рождения студента: ");
-            DateTime dateOfBirth = DateTime.Parse( Console.ReadLine());
+            DateTime dateOfBirth;
+            string a = Console.ReadLine();
+            if (a != "")
+                dateOfBirth = DateTime.Parse(a);
+            else
+                dateOfBirth = DateTime.Now;
             return new Student(name, surname, middlename, dateOfBirth, Group());
         }
 
@@ -163,11 +168,7 @@ namespace ConsoleApp1
             {
                 yearOfAdmission = DateTime.Now.Year;
             }
-<<<<<<< HEAD
             return new Group(name, abbreviation, number, yearOfAdmission, Specialization(), Employee());
-=======
-            return new Class4(name, abbreviation, number, yearOfAdmission, Specialization(), Class9());
->>>>>>> d4a5461feb0600e827b2ba386a46313144cdc7b0
 
 
         }
