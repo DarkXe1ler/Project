@@ -129,9 +129,9 @@ namespace ConsoleApp1
             return new Division(name, Employee(), Class12());
         }
 
-        public static Class12 Class12()
+        public static Organization Class12()
         {
-            return new Class12();
+            return new Organization();
 
         }
 

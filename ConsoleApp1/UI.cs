@@ -115,7 +115,7 @@ namespace ConsoleApp1
             Print(division.Organization);
         }
 
-        public static void Print(Class12 class12)
+        public static void Print(Organization class12)
         {
             
             
