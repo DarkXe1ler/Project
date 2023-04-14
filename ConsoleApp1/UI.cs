@@ -98,11 +98,11 @@ namespace ConsoleApp1
             Print(employee.Position);
         }
 
-        public static void Print(Class10 class10)
+        public static void Print(Salary Salary)
         {
-            Console.WriteLine($"Class10.Имя = {class10.Name}");
-            Console.WriteLine($"Class10.Оклад = {class10.Salary}");
-            Print(class10.Division);
+            Console.WriteLine($"Salary.Имя = {Salary.Name}");
+            Console.WriteLine($"Salary.Оклад = {Salary.Salary}");
+            Print(Salary.Division);
 
         }
 
