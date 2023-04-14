@@ -123,7 +123,7 @@ namespace ConsoleApp1
             string name = Console.ReadLine();
             Console.Write("Введите Отчество: ");
             string patronymic = Console.ReadLine();
-            return new Employee(surnname, name, patronymic, Class10());
+            return new Employee(surnname, name, patronymic, Salary());
         }
         public static Specialization Specialization()
         {
@@ -142,13 +142,13 @@ namespace ConsoleApp1
             return new Class8(name);
         }
 
-        public static Class10 Class10()
+        public static Salary Salary()
         {
             Console.Write("Введите название: ");
             string name = Console.ReadLine();
             Console.Write("Введите оклад: ");
             string salary = Console.ReadLine();
-            return new Class10(name, salary, Division());
+            return new Salary(name, salary, Division());
         }
 
         public static Division Division()
