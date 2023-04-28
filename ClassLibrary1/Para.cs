@@ -23,7 +23,7 @@ namespace ClassLibrary1
             Smena = smena;
         }
         public Para(Smena smena)
-            :this(DateTime.Now, DateTime.Now, DateTime.Now, DateTime.Now, smena)
+         : this(DateTime.Now, DateTime.Now, DateTime.Now, DateTime.Now, smena)
         {
 
         }
