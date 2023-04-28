@@ -22,5 +22,10 @@ namespace ClassLibrary1
             DateOfBirth = dateOfBirth;
             Group = group;
         }
+        public Student(string surname, string name, string middlename, Group group)
+        :this(surname,name, middlename, DateTime.Now,group)
+        {
+            
+        }
     }
 }
