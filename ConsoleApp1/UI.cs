@@ -108,12 +108,12 @@ namespace ConsoleApp1
 
         public static void Print(Division division)
         {
-            Console.WriteLine($"Class11.Имя = {division.Name}");
+            Console.WriteLine($"Division.Имя = {division.Name}");
             Print(division.Director);
             Print(division.Organization);
         }
 
-        public static void Print(Organization class12)
+        public static void Print(Organization Organization)
         {
             
             

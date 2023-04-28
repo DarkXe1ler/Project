@@ -157,10 +157,10 @@ namespace ConsoleApp1
             string name = Console.ReadLine();  
 
 
-            return new Division(name, Employee(), Class12());
+            return new Division(name, Employee(), Organization());
         }
 
-        public static Organization Class12()
+        public static Organization Organization()
         {
             return new Organization();
 
