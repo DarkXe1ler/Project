@@ -9,11 +9,11 @@ namespace ClassLibrary1
 {
     public class Specialization
     {
-        public string Named { get; }
+        public string Name { get; }
         public string Reduction { get; }
         public Specialization(string named, string reduction)
         {
-            Named = named;
+            Name = named;
             Reduction = reduction;
         }
     }
