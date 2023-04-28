@@ -135,11 +135,11 @@ namespace ConsoleApp1
         }
 
 
-        public static Class8 Smena()
+        public static Smena Smena()
         {
             Console.WriteLine("Введите название смены: ");
             string name = Console.ReadLine();
-            return new Class8(name);
+            return new Smena(name);
         }
 
         public static Salary Salary()
