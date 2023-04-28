@@ -94,8 +94,7 @@ namespace ConsoleApp1
             Console.Write("Введите отчество студента: ");
             string middlename = Console.ReadLine();
             Console.Write("Введите дату рождения студента: ");
-            DateTime dateOfBirth;
-            if (DateTime.TryParse(Console.ReadLine(), out dateOfBirth))
+            if (DateTime.TryParse(Console.ReadLine(), out DateTime dateOfBirth))
             {
                 return new Student(name, surname, middlename, dateOfBirth, Group());
             }

@@ -9,7 +9,7 @@ namespace ClassLibrary1
      public class Salary
  {
      public string Name { get; }
-     public string salary { get; }
+     public string Salary { get; }
      public Division Division { get; }
      
      
