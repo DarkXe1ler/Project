@@ -116,10 +116,10 @@ namespace ConsoleApp1
         public static Specialization Specialization()
         {
             Console.WriteLine("Введите название специальности");
-            string named = Console.ReadLine();
+            string name = Console.ReadLine();
             Console.WriteLine("Введите сокращение");
             string reduction = Console.ReadLine();
-            return new Specialization(named, reduction);
+            return new Specialization(name, reduction);
         }
 
 
