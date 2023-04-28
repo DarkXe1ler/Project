@@ -85,7 +85,7 @@ namespace ConsoleApp1
             Console.WriteLine($"Class6.Введите сокращение = {specialization.Reduction}");
         }
 
-        public static void Print(Class8 Smena)
+        public static void Print(Smena Smena)
         {
             Console.WriteLine($"Class6.Введите смену:  = {Smena.Named}");
         }
