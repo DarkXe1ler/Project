@@ -94,8 +94,13 @@ namespace ConsoleApp1
             Console.Write("Введите отчество студента: ");
             string middlename = Console.ReadLine();
             Console.Write("Введите дату рождения студента: ");
-            DateTime dateOfBirth = DateTime.Parse(Console.ReadLine());
-            return new Student(name, surname, middlename, dateOfBirth, Group());
+            DateTime dateOfBirth;
+            if (DateTime.TryParse(Console.ReadLine(), out dateOfBirth))
+            {
+                return new Student(name, surname, middlename, dateOfBirth, Group());
+            }
+            else
+                return new Student(name, surname, middlename, Group());
         }
 
         public static Employee Employee()
