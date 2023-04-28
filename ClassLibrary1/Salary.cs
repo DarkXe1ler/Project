@@ -16,7 +16,7 @@ namespace ClassLibrary1
      public Salary(string name, string salary, Division division)
      {
          this.Name = name;
-         this.salary = salary;
+         this.Salary = salary;
          this.Division = division;
      }
  }
