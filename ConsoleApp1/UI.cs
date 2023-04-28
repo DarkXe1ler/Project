@@ -87,7 +87,7 @@ namespace ConsoleApp1
 
         public static void Print(Smena Smena)
         {
-            Console.WriteLine($"Class6.Введите смену:  = {Smena.Named}");
+            Console.WriteLine($"Smena.Название смены:  = {Smena.Named}");
         }
 
         public static void Print(Employee employee)

@@ -8,6 +8,10 @@ namespace ClassLibrary1
 {
     public class Smena
     {
-
+        public string Named { get; }
+        public Smena(string named)
+        {
+            Named = named;
+        }
     }
 }
