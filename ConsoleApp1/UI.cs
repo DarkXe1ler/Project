@@ -101,7 +101,7 @@ namespace ConsoleApp1
         public static void Print(Salary Salary)
         {
             Console.WriteLine($"Salary.Имя = {Salary.Name}");
-            Console.WriteLine($"Salary.Оклад = {Salary.salary}");
+            Console.WriteLine($"Salary.Оклад = {Salary.Sal}");
             Print(Salary.Division);
 
         }

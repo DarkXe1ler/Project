@@ -9,14 +9,14 @@ namespace ClassLibrary1
      public class Salary
  {
      public string Name { get; }
-     public string Salary { get; }
+     public string Sal { get; }
      public Division Division { get; }
      
      
      public Salary(string name, string salary, Division division)
      {
          this.Name = name;
-         this.Salary = salary;
+         this.Sal = salary;
          this.Division = division;
      }
  }
