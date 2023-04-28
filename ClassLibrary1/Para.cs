@@ -22,5 +22,10 @@ namespace ClassLibrary1
             BreakEndTime = breakEndTime;
             Smena = smena;
         }
+        public Para(Smena smena)
+            :this(DateTime.Now, DateTime.Now, DateTime.Now, DateTime.Now, smena)
+        {
+
+        }
     }
 }

@@ -33,31 +33,19 @@ namespace ConsoleApp1
             Console.Write("Укажите время начала пары: ");
             DateTime TheStartTimeOfThePair;
             string a = Console.ReadLine();
-            if (a != "")
                 TheStartTimeOfThePair = DateTime.Parse(a);
-            else
-                TheStartTimeOfThePair = DateTime.Now;
             Console.Write("Укажите время окончания пары: ");
             DateTime TheEndTimeOfThePair;
             string b = Console.ReadLine();
-            if (b != "")
                 TheEndTimeOfThePair = DateTime.Parse(b);
-            else
-                TheEndTimeOfThePair = DateTime.Now;
             Console.Write("Укажите время начала перерыва: ");
             DateTime BreakStartTime;
             string c = Console.ReadLine();
-            if (c != "")
                 BreakStartTime = DateTime.Parse(c);
-            else
-                BreakStartTime = DateTime.Now;
             Console.Write("Укажите время окончания перерыва: ");
             DateTime BreakEndTime;
             string d = Console.ReadLine();
-            if (d != "")
                 BreakEndTime = DateTime.Parse(d);
-            else
-                BreakEndTime = DateTime.Now;
             return new Para(TheStartTimeOfThePair, TheEndTimeOfThePair, BreakStartTime, BreakEndTime, Smena());
         }
         public static Lesson Lesson()
