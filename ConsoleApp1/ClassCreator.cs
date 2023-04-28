@@ -33,31 +33,19 @@ namespace ConsoleApp1
             Console.Write("Укажите время начала пары: ");
             DateTime TheStartTimeOfThePair;
             string a = Console.ReadLine();
-            if (a != "")
                 TheStartTimeOfThePair = DateTime.Parse(a);
-            else
-                TheStartTimeOfThePair = DateTime.Now;
             Console.Write("Укажите время окончания пары: ");
             DateTime TheEndTimeOfThePair;
             string b = Console.ReadLine();
-            if (b != "")
                 TheEndTimeOfThePair = DateTime.Parse(b);
-            else
-                TheEndTimeOfThePair = DateTime.Now;
             Console.Write("Укажите время начала перерыва: ");
             DateTime BreakStartTime;
             string c = Console.ReadLine();
-            if (c != "")
                 BreakStartTime = DateTime.Parse(c);
-            else
-                BreakStartTime = DateTime.Now;
             Console.Write("Укажите время окончания перерыва: ");
             DateTime BreakEndTime;
             string d = Console.ReadLine();
-            if (d != "")
                 BreakEndTime = DateTime.Parse(d);
-            else
-                BreakEndTime = DateTime.Now;
             return new Para(TheStartTimeOfThePair, TheEndTimeOfThePair, BreakStartTime, BreakEndTime, Smena());
         }
         public static Lesson Lesson()
@@ -106,8 +94,13 @@ namespace ConsoleApp1
             Console.Write("Введите отчество студента: ");
             string middlename = Console.ReadLine();
             Console.Write("Введите дату рождения студента: ");
-            DateTime dateOfBirth = DateTime.Parse(Console.ReadLine());
-            return new Student(name, surname, middlename, dateOfBirth, Group());
+            DateTime dateOfBirth;
+            if (DateTime.TryParse(Console.ReadLine(), out dateOfBirth))
+            {
+                return new Student(name, surname, middlename, dateOfBirth, Group());
+            }
+            else
+                return new Student(name, surname, middlename, Group());
         }
 
         public static Employee Employee()
@@ -123,10 +116,10 @@ namespace ConsoleApp1
         public static Specialization Specialization()
         {
             Console.WriteLine("Введите название специальности");
-            string named = Console.ReadLine();
+            string name = Console.ReadLine();
             Console.WriteLine("Введите сокращение");
             string reduction = Console.ReadLine();
-            return new Specialization(named, reduction);
+            return new Specialization(name, reduction);
         }
 
 
